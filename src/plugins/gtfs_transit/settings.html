@@ -1,0 +1,32 @@
+<div class="form-group">
+    <div class="form-group">
+        <label for="gtfs_url" class="form-label">GTFS URL:</label>
+        <input type="text" id="gtfs_url" name="gtfs_url" placeholder="Enter url of your transit service's GTFS service" required class="form-input">
+    </div>
+    <div class="form-group">
+        <label for="stop1" class="form-label">First Stop (required):</label>
+        <input type="text" id="stop1" name="stop1" placeholder="Enter the id of the first stop you want to track" class="form-input">
+        <label for="stop2" class="form-label">Second Stop:</label>
+        <input type="text" id="stop2" name="stop2" placeholder="Enter the id of the second stop you want to track" class="form-input">
+        <label for="stop3" class="form-label">Third Stop:</label>
+        <input type="text" id="stop3" name="stop3" placeholder="Enter the id of the third stop you want to track" class="form-input">
+        <label for="stop4" class="form-label">Fourth Stop:</label>
+        <input type="text" id="stop4" name="stop4" placeholder="Enter the id of the forth stop you want to track" class="form-input">
+        <label for="stop5" class="form-label">Fifth Stop:</label>
+        <input type="text" id="stop5" name="stop5" placeholder="Enter the id of the fifth stop you want to track" class="form-input">
+        <label for="stop6" class="form-label">Sixth Stop:</label>
+        <input type="text" id="stop6" name="stop6" placeholder="Enter the id of the sixth stop you want to track" class="form-input">
+        <label for="stop7" class="form-label">Seventh Stop:</label>
+        <input type="text" id="stop7" name="stop7" placeholder="Enter the id of the seventh stop you want to track" class="form-input">
+        <label for="stop8" class="form-label">Eigth Stop:</label>
+        <input type="text" id="stop8" name="stop8" placeholder="Enter the id of the eight stop you want to track" class="form-input">
+    </div>
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        if (loadPluginSettings) {
+            document.getElementById('gtfs_url').value = pluginSettings.gtfs_url || '';
+        }
+    });
+</script>

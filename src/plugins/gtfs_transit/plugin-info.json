@@ -1,0 +1,5 @@
+{
+    "display_name": "Transit",
+    "id": "gtfs_transit",
+    "class": "GtfsTransit"
+}

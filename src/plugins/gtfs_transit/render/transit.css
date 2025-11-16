@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.stations {
+    --station-bg-color: white;
+    --station-text-color: black;
+    --station-icon-size: 2.0em;
+    --station-font-size: 1.0em;
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 0.4em;
+    align-items: start;
+}
+.station {
+    color: var(--station-text-color);
+    background-color: var(--station-bg-color);
+    font-size: var(--station-font-size);
+    margin-bottom: 0.4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    border: 1px solid var(--station-text-color);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.icon {
+    width: var(--station-icon-size);
+    height: var(--station-icon-size);
+    margin-right: 0.5em;
+}
+.station-name {
+    font-weight: bold;
+    flex: 1;
+}
+.departures {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2em;
+    margin-left: auto;
+}
+.departure-time {
+    margin-right: 10px;
+}
+.weather-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin: 1em 0;
+    text-align: center;
+    width: 100%;
+}
+.weather-info div {
+    text-align: center;
+}

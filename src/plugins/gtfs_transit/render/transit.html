@@ -1,0 +1,19 @@
+{% extends "plugin.html" %}
+
+{% block content %}
+<div style="width: 100%;">
+    <div class="stations">
+        {% for station in stations %}
+        <div class="station">
+            <img class="icon" src="{{ station.icon }}" alt="Icon">
+            <span class="station-name">{{ station.name }}</span>
+            <div class="departures">
+                {% for departure in station.departures %}
+                <span class="departure-time">{{ departure }}</span>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
